@@ -1,0 +1,36 @@
+body {
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    /* Stack elements vertically */
+}
+
+h1 {
+    margin: 0;
+    /* Remove margin from the top and bottom of h1 */
+}
+
+h2 {
+    margin: 10px 0;
+    /* Adjust the margin for h2 (top and bottom) */
+}
+
+
+a {
+    color: black;
+    /* Set the link color (blue in this example) */
+    text-decoration: none;
+    /* Remove the default underline */
+    font-weight: bold;
+    /* Make the text bold */
+    transition: color 0.3s;
+    /* Add a smooth color transition on hover */
+}
+
+a:hover {
+    color: #fffdd0;
+    /* Change the color on hover (darker blue in this example) */
+}
