@@ -1,0 +1,105 @@
+:root {
+    --bgcolor: #fff;
+    /* Background color */
+    --text-color: #000;
+    /* Text color */
+    --link-color: #89CFF0;
+    /* Link color */
+}
+
+body {
+    background-color: var(--bgcolor);
+    /* Apply background color */
+    color: var(--text-color);
+    /* Apply text color */
+}
+
+/* Define link styles */
+a {
+    color: var(--link-color);
+    /* Apply link color */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+/* Define link hover behavior (optional) */
+a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.blog-post {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.post-meta {
+    font-style: italic;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* Styling for the Home button */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 15px 30px;
+    /* Increase padding for a bigger button */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    /* Increase border-radius for a rounded button */
+    transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+    /* Add text-decoration transition */
+}
+
+.home-button:hover {
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+.home-button:focus {
+    outline: none;
+    /* Remove focus outline */
+}
+
+.home-button:active {
+    text-decoration: none;
+    /* Remove underline when clicked */
+}
