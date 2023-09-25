@@ -1,18 +1,22 @@
-let count = 0; // Initialize the visitor count
+window.addEventListener("DOMContentLoaded", (event) => {
+  getVisitCount();
+});
 
-// Check if there's a stored count in localStorage
-if (localStorage.getItem("visitorCount")) {
-  count = parseInt(localStorage.getItem("visitorCount"));
-}
+const functionApi = "";
 
-// Display the count
-document.getElementById("visitor-count").textContent = count;
-
-// Increment the count
-count++;
-
-// Update the displayed count
-document.getElementById("visitor-count").textContent = count;
-
-// Store the updated count in localStorage
-localStorage.setItem("visitorCount", count);
+const getVisitCount = () => {
+  let count = 30;
+  fetch(functionApi)
+    .then((response) => {
+      return response.json;
+    })
+    .then((response) => {
+      console.log("Website called function API.");
+      count = response.count;
+      document.getElementById("counter").innerText = count;
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  return count;
+};
